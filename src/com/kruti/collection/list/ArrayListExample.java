@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.RandomAccess;
 
 public class ArrayListExample {
@@ -69,8 +70,30 @@ public class ArrayListExample {
 			
 		}
 		System.out.println("After Interator : "+l);
-		
-		
+	
+		System.out.println("--------List Iterator ----");
+		List l11 = new LinkedList(al1);
+		System.out.println("Before Interator : "+l11	);
+		ListIterator li = l11.listIterator();
+		while (li.hasNext()) {			
+			String s = (String) li.next();
+			System.out.println(s);
+			if(s.equals("1")) {
+				li.remove();
+			}
+			if(s.equals("OL")) {
+				li.set("R");
+			}
+			if(s.equals("P")) {
+				li.add("S");
+			}			
+		}
+		while(li.hasPrevious()) {
+			System.out.println("I :"+li.previous());
+		}
+		System.out.println("Afhter Interator : "+l11);
+		Collections.sort(l11);
+		System.out.println("Afhter sort: "+l11);
 	}
 
 }

@@ -1,6 +1,8 @@
 package com.kruti.collection.list;
 
 import java.util.Enumeration;
+import java.util.Iterator;
+import java.util.ListIterator;
 import java.util.Vector;
 /**
  * 
@@ -67,5 +69,14 @@ public class VectorExample {
 		}
 		
 		System.out.println(v3);
+		
+		Vector v4 = new Vector();
+		Enumeration e1 = v4.elements();
+		Iterator it = v4.iterator();
+		ListIterator lit = v4.listIterator();
+		
+		System.out.println(e1.getClass().getName());
+		System.out.println(it.getClass().getName());
+		System.out.println(lit.getClass().getName());
 	}
 }
