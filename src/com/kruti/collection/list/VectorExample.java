@@ -1,5 +1,6 @@
 package com.kruti.collection.list;
 
+import java.util.Enumeration;
 import java.util.Vector;
 /**
  * 
@@ -51,5 +52,20 @@ public class VectorExample {
 		v2.addElement("C");v2.addElement("C");
 		System.out.println("Capacity :"+v2.capacity()+" Size :"+ v2.size()); // new capacity is 9
 		
+		
+		Vector v3 = new Vector();
+		for (int i = 0; i < 10; i++) {
+			v3.addElement(i);
+		}
+		Enumeration e = v3.elements();
+		while(e.hasMoreElements()) {
+			int i = (int) e.nextElement();
+			if(i % 2 ==0)
+			System.out.println(i);
+			// v3.add(12); cant apply here 
+			
+		}
+		
+		System.out.println(v3);
 	}
 }
