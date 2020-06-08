@@ -19,7 +19,7 @@ public class ComparableComparatorExample {
         //                  (3) Print Sorted list 
         System.out.println("Sorted by rating"); 
         RatingCompare ratingCompare = new RatingCompare(); 
-        Collections.sort(list, ratingCompare); 
+        Collections.sort(list, ratingCompare);  // Sorting with custom params 
         for (Movie movie: list) 
             System.out.println(movie.getRating() + " " + 
                                movie.getName() + " " + 
