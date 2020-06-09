@@ -1,4 +1,4 @@
-package com.kruti.thread.create;
+package com.kruti.thread.tutorial;
 
 class Runner1 implements Runnable{
 	@Override
