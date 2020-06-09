@@ -20,6 +20,6 @@ public class App {
 		Person p = new Person("Kruti", 10);
 		Person p1 = new Person("Kruti" , 10);
 		System.out.println(p == p1);
-		System.out.println(p.equals(p1));
+		System.out.println(p.equals(p1)); // if not overide than object method will be use and internaly it use == so it will return false
 	}
 }

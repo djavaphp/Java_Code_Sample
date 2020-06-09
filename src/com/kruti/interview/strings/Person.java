@@ -22,4 +22,20 @@ public class Person {
 	public void setAge(int age) {
 		this.age = age;
 	}
+	
+	/*
+	 @Override
+	    public boolean equals(Object obj) {
+	        if (obj == null) {
+	            return false;
+	        }
+
+	        if (!Person.class.isAssignableFrom(obj.getClass())) {
+	            return false;
+	        }
+
+	        Person other = (Person)obj;
+	        return other.name.equals(name) && other.age == age;
+	    }
+	    */
 }
